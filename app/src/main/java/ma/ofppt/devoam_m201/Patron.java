@@ -1,13 +1,15 @@
 package ma.ofppt.devoam_m201;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Patron extends Employe{
     private static double chiffreAffaire;
     private double pourcentage;
-    public Patron(int matricule, String nom, String prenom, Date dateNaissance,double chiffreAffaire) {
+    public Patron(int matricule, String nom, String prenom, LocalDate dateNaissance, double chiffreAffaire,double pourcentage) {
         super(matricule, nom, prenom, dateNaissance);
-        chiffreAffaire = chiffreAffaire;
+        Patron.chiffreAffaire = chiffreAffaire;
+        this.pourcentage = pourcentage;
     }
 
     public double getPourcentage() {

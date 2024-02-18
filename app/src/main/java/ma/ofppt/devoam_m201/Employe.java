@@ -1,15 +1,16 @@
 package ma.ofppt.devoam_m201;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Employe {
     private int matricule;
     private String nom, prenom;
-    private Date dateNaissance;
+    private LocalDate dateNaissance;
     public Employe(){
 
     }
-    public Employe(int matricule, String nom, String prenom, Date dateNaissance) {
+    public Employe(int matricule, String nom, String prenom, LocalDate dateNaissance) {
         this.matricule = matricule;
         this.nom = nom;
         this.prenom = prenom;
@@ -40,11 +41,11 @@ public abstract class Employe {
         this.prenom = prenom;
     }
 
-    public Date getDateNaissance() {
+    public LocalDate getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(LocalDate dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 

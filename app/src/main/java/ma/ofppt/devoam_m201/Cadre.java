@@ -1,18 +1,17 @@
 package ma.ofppt.devoam_m201;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Cadre extends Employe{
     private int indice;
 
-    public Cadre(int matricule, String nom, String prenom, Date dateNaissance, int indice) {
+    public Cadre(int matricule, String nom, String prenom, LocalDate dateNaissance, int indice) {
         super(matricule, nom, prenom, dateNaissance);
         this.indice = indice;
     }
 
-    public Cadre() {
 
-    }
 
     public int getIndice() {
         return indice;
