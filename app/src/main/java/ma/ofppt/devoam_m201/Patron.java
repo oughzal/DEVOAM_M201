@@ -30,4 +30,5 @@ public class Patron extends Employe{
     public double getSalaire() {
         return chiffreAffaire*pourcentage/100;
     }
+
 }
