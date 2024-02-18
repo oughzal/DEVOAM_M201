@@ -6,7 +6,9 @@ public abstract class Employe {
     private int matricule;
     private String nom, prenom;
     private Date dateNaissance;
+    public Employe(){
 
+    }
     public Employe(int matricule, String nom, String prenom, Date dateNaissance) {
         this.matricule = matricule;
         this.nom = nom;

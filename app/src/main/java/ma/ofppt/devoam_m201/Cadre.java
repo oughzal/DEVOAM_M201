@@ -10,6 +10,10 @@ public class Cadre extends Employe{
         this.indice = indice;
     }
 
+    public Cadre() {
+
+    }
+
     public int getIndice() {
         return indice;
     }
